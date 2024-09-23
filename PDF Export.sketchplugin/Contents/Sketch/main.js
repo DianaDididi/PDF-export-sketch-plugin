@@ -303,7 +303,7 @@ function alertNoArtboards(message) {
 function sketchVersionNumber() {
   var version = NSBundle.mainBundle().objectForInfoDictionaryKey("CFBundleShortVersionString")
   var versionNumber = version.stringByReplacingOccurrencesOfString_withString(".", "") + ""
-  while (versionNumber.length != 3) {
+  while (versionNumber.length != 4) {
     versionNumber += "0"
   }
   return parseInt(versionNumber)
